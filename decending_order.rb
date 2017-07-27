@@ -1,18 +1,12 @@
 
 def descending_order(n)
   #converting the n into an array of numbers
-   array = []
-      while n > 0
-       array.unshift n %10
-       n/+10
-      end
-      if array = 0
-      return 0
-      else
-    array.sort.reverse.join('')
-    end
-
+  arr = n.to_s.split('')
+   output = arr.sort!.reverse.join('')
+   return output.to_i
 end
+
+
 
 =begin
 Your task is to make a function that can take any non-negative integer as a argument and return it with it's digits in descending order. Essentially, rearrange the digits to create the highest possible number.
