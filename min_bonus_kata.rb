@@ -1,16 +1,11 @@
 
 def minimum_bonus(scores)
-Making sense of the problem - writing it out in English 
-  #scores are an array of numbers
-  #the length of this array should be known/ calculated??)
-  #1 (value) is asigned to the first number
-  #if the second number is larger than the first it is given 2 (new_value =value +1)
-  #if the second number is the same size or smaller than the first it is given 1
-  #if the 3rd number is larger than the second it returns 3 (new_value +1)
-  #if the 3rd number is smaller than the second it returns 1 (value)
-  #all the values returned are added together and calculated.
-end
-
+  scores=[20,30,10,30,40,10,20,30,40,30]
+    scores.map.each_with_index do |item, index|
+        if index == 0 then
+          item = 1
+        end
+    end
 
 
 =begin
